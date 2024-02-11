@@ -1,0 +1,14 @@
+{# templates/players/new.html.twig #}
+
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>New Player</h1>
+
+    {{ form_start(form) }}
+    {{ form_row(form.nome) }}
+    {{ form_row(form.eta) }}
+    {{ form_row(form.velocita) }}
+    {{ form_row(form.punteggio) }}
+    {{ form_end(form) }}
+{% endblock %}

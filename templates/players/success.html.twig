@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+Ok
+
+    {% if lista is defined and lista|length > 0 %}
+        <h1>Elenco dei giocatori</h1>
+        <ul>
+            {% for abc in lista %}
+                <li>{{ abc.nome }}</li>
+                <!-- Aggiungi altre informazioni del giocatore qui se necessario -->
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>Non ci sono giocatori disponibili.</p>
+    {% endif %}
+
+
+
+{% endblock %}
